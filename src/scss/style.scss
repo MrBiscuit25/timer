@@ -1,0 +1,71 @@
+@import "normalize.css";
+@import "colors.scss";
+html {
+  width: 100vw;
+  height: 100vh;
+  background-color: $base07;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font:
+    1.3rem "Montserrat",
+    sans-serif;
+  letter-spacing: 0.23rem;
+  text-shadow: 1px 1px 2px white;
+  color: $base00;
+}
+.info {
+  max-width: 1199px;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  font-family: "Poppins", sans-serif;
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: $base00;
+  }
+}
+.text-info {
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  .text-info-time {
+    font-size: large;
+    font-weight: 600;
+  }
+}
+
+.display-time {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  .time-card {
+    background: $base01;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: $base06;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .time {
+      border-bottom: 1px solid $base06;
+      font-size: 2.55rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+    }
+  }
+}
